@@ -135,49 +135,6 @@ body {
   font-size: 11pt;
 }
 
-.tabla-anexo {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 0.5cm;
-  margin-bottom: 0.5cm;
-  font-size: 11pt;
-}
-
-.tabla-anexo th,
-.tabla-anexo td {
-  border: 1px solid #000;
-  padding: 0.2cm 0.3cm;
-  text-align: left;
-}
-
-.tabla-anexo th {
-  background-color: #f0f0f0;
-  font-weight: bold;
-  text-align: center;
-}
-
-.tabla-anexo td:nth-child(3) {
-  text-align: center;
-}
-
-.contenedor-diagrama {
-  text-align: center;
-  margin-top: 0.5cm;
-}
-
-.diagrama {
-  max-width: 80%;
-  height: auto;
-  margin-bottom: 0.3cm;
-}
-
-.leyenda {
-  text-indent: 0 !important;
-  font-style: italic;
-  font-size: 11pt;
-  text-align: center;
-}
-
 @media (max-width: 800px) {
   body {
     padding: 0;
@@ -220,8 +177,5 @@ body {
   }
   .dato-bloque {
     text-align: center;
-  }
-  .tabla-anexo {
-    font-size: 9pt;
   }
 }
