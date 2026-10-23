@@ -26,7 +26,10 @@ body {
   width: 21.59cm;
   height: 27.94cm;
   background-color: #fff;
-  padding: 3cm 3cm 3cm 4cm;
+  padding-top: 3cm;
+  padding-bottom: 3cm;
+  padding-right: 3cm;
+  padding-left: 4cm;
   position: relative;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -54,7 +57,7 @@ body {
 .texto-institucional {
   text-align: center;
   font-size: 11pt;
-  line-height: 1.3;
+  line-height: 1.5;
 }
 
 .texto-institucional p {
@@ -73,7 +76,7 @@ body {
 .titulo-portada h1 {
   font-size: 26pt;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 .datos-portada {
@@ -99,6 +102,7 @@ body {
   text-align: center;
   margin-bottom: 1cm;
   text-transform: uppercase;
+  line-height: 1.5;
 }
 
 .contenido h3 {
@@ -106,6 +110,7 @@ body {
   font-weight: bold;
   margin-top: 0.8cm;
   margin-bottom: 0.3cm;
+  line-height: 1.5;
 }
 
 .contenido p {
@@ -113,6 +118,7 @@ body {
   text-align: justify;
   line-height: 1.5;
   margin-bottom: 0.2cm;
+  font-size: 12pt;
 }
 
 .contenido ul {
@@ -124,6 +130,11 @@ body {
   text-align: justify;
   line-height: 1.5;
   margin-bottom: 0.3cm;
+  font-size: 12pt;
+}
+
+.contenido li p {
+  text-indent: 1.25cm;
 }
 
 .numero-pagina {
@@ -133,6 +144,7 @@ body {
   right: 0;
   text-align: center;
   font-size: 11pt;
+  line-height: 1.5;
 }
 
 @media (max-width: 800px) {
@@ -147,7 +159,10 @@ body {
     width: 100%;
     height: auto;
     min-height: 100vh;
-    padding: 2cm 1.5cm 2cm 2cm;
+    padding-top: 3cm;
+    padding-bottom: 3cm;
+    padding-right: 1.5cm;
+    padding-left: 2cm;
     box-shadow: none;
     border-bottom: 2px solid #ddd;
     margin-bottom: 0.5cm;
@@ -177,5 +192,9 @@ body {
   }
   .dato-bloque {
     text-align: center;
+  }
+  .numero-pagina {
+    position: static;
+    margin-top: 1cm;
   }
 }
