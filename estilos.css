@@ -23,9 +23,9 @@ body {
 }
 
 .hoja {
-  width: 21.59cm;
-  height: 27.94cm;
-  background-color: #fff;
+  width: 215.9mm;
+  min-height: 279.4mm;
+  background-color: #ffffff;
   padding-top: 3cm;
   padding-bottom: 3cm;
   padding-right: 3cm;
@@ -33,6 +33,11 @@ body {
   position: relative;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  page-break-after: always;
+}
+
+.hoja:last-child {
+  page-break-after: auto;
 }
 
 .portada {
@@ -133,10 +138,6 @@ body {
   font-size: 12pt;
 }
 
-.contenido li p {
-  text-indent: 1.25cm;
-}
-
 .numero-pagina {
   position: absolute;
   bottom: 1.5cm;
@@ -147,10 +148,49 @@ body {
   line-height: 1.5;
 }
 
+@media print {
+  @page {
+    size: letter;
+    margin: 0;
+  }
+
+  body {
+    background-color: #ffffff;
+    padding: 0;
+    display: block;
+  }
+
+  .visor {
+    gap: 0;
+    width: 100%;
+    display: block;
+  }
+
+  .hoja {
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: none;
+    padding-top: 3cm;
+    padding-bottom: 3cm;
+    padding-right: 3cm;
+    padding-left: 4cm;
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+
+  .hoja:last-child {
+    page-break-after: auto;
+  }
+
+  .numero-pagina {
+    bottom: 1.5cm;
+  }
+}
+
 @media (max-width: 800px) {
   body {
     padding: 0;
-    background-color: #fff;
+    background-color: #ffffff;
   }
   .visor {
     gap: 0;
