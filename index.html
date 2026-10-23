@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informe Capa 7 - Modelo OSI | UNEFA</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="visor">
+
+    <section class="hoja portada">
+      <div class="encabezado-con-logos">
+        <img src="unefalogo.svg.png" alt="Logo UNEFA Izq" class="logo">
+        <div class="texto-institucional">
+          <p>REPÚBLICA BOLIVARIANA DE VENEZUELA</p>
+          <p>MINISTERIO DEL PODER POPULAR PARA LA</p>
+          <p>DEFENSA</p>
+          <p>UNIVERSIDAD NACIONAL EXPERIMENTAL</p>
+          <p>POLITÉCNICA DE LA</p>
+          <p>FUERZA ARMADA NACIONAL</p>
+          <p>UNEFA - NÚCLEO GUÁRICO</p>
+          <p>INGENIERÍA DE SISTEMAS - VIII SEMESTRE</p>
+        </div>
+        <img src="unefalogo.svg.png" alt="Logo UNEFA Der" class="logo">
+      </div>
+
+      <div class="titulo-portada">
+        <h1>CAPA 7 DEL MODELO OSI<br>(APLICACIÓN)</h1>
+      </div>
+
+      <div class="datos-portada">
+        <div class="dato-bloque">
+          <p class="etiqueta">PROFESOR:</p>
+          <p>Raul Blanco</p>
+        </div>
+        <div class="dato-bloque">
+          <p class="etiqueta">BACHILLER:</p>
+          <p>Krisber Diaz</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="hoja contenido">
+      <h2>LA CAPA 7 DEL MODELO OSI: CAPA DE APLICACIÓN</h2>
+      
+      <p>La Capa 7 (Capa de Aplicación) es el nivel más alto del modelo OSI (Open Systems Interconnection). Es la única capa que interactúa de manera directa con las aplicaciones de software que utiliza el usuario final y actúa como la interfaz de comunicación entre el programa de usuario y los servicios de red subyacentes.</p>
+
+      <h3>1. Función Principal</h3>
+      <p>Es fundamental aclarar que la Capa 7 no representa al software en sí mismo (por ejemplo, no es el navegador Google Chrome o el cliente de correo Outlook), sino al conjunto de servicios y protocolos que permiten a esas aplicaciones acceder a los recursos de la red para enviar y recibir datos.</p>
+
+      <h3>2. Funciones Clave e Importancia</h3>
+      <p>Entre las responsabilidades más relevantes de la Capa de Aplicación se encuentran:</p>
+      <ul>
+        <li><strong>Identificación de interlocutores y disponibilidad:</strong> Determina si el destinatario o el recurso de red necesario (como un servidor o una impresora) está disponible para iniciar la comunicación.</li>
+        <li><strong>Autenticación y privacidad:</strong> Gestiona la verificación de credenciales de usuario y establece los parámetros de seguridad iniciales para la sesión.</li>
+        <li><strong>Sincronización de la comunicación:</strong> Coagula y coordina la cooperación entre aplicaciones que se ejecutan en diferentes sistemas o dispositivos.</li>
+        <li><strong>Gestión de recursos y archivos:</strong> Ofrece servicios de transferencia, manipulación, consulta y almacenamiento de archivos a distancia.</li>
+      </ul>
+
+      <div class="numero-pagina">1</div>
+    </section>
+
+    <section class="hoja contenido">
+      <h3>3. Protocolos Fundamentales de la Capa 7</h3>
+      <p>Para posibilitar las interacciones que realizamos a diario en Internet, la Capa 7 hace uso de diversos protocolos especializados:</p>
+      <ul>
+        <li><strong>HTTP / HTTPS (HyperText Transfer Protocol / Secure):</strong> Protocolo base para la transferencia y navegación de contenido web estructurado.</li>
+        <li><strong>SMTP (Simple Mail Transfer Protocol):</strong> Encargado del envío y enrutamiento de correos electrónicos.</li>
+        <li><strong>IMAP / POP3:</strong> Protocolos diseñados para la recepción, lectura y gestión de mensajes de correo electrónico desde un servidor.</li>
+        <li><strong>FTP / SFTP (File Transfer Protocol / Secure):</strong> Utilizados para la transferencia eficiente y segura de archivos entre clientes y servidores.</li>
+        <li><strong>DNS (Domain Name System):</strong> Sistema encargado de traducir nombres de dominio legibles por humanos (ej. ejemplo.com) en direcciones IP numéricas procesables por la red.</li>
+        <li><strong>DHCP (Dynamic Host Configuration Protocol):</strong> Asigna de forma automática parámetros de red (como direcciones IP) a los dispositivos de una red.</li>
+        <li><strong>SSH / Telnet:</strong> Permiten la gestión e interacción remota con servidores o sistemas operativos mediante líneas de comandos.</li>
+      </ul>
+
+      <h3>4. Arquitecturas y Modelos de Aplicación</h3>
+      <p>Los protocolos de la Capa 7 permiten que las aplicaciones se comuniquen bajo diferentes arquitecturas de red. Las más comunes son:</p>
+      <ul>
+        <li><strong>Cliente-Servidor:</strong> El cliente (por ejemplo, un navegador web) solicita un servicio o recurso, y el servidor (por ejemplo, un servidor web Apache) lo procesa y responde. Es el modelo dominante en la World Wide Web.</li>
+        <li><strong>Peer-to-Peer (P2P):</strong> Los dispositivos actúan simultáneamente como clientes y servidores, compartiendo recursos directamente sin necesidad de un servidor central. Ejemplos incluyen BitTorrent para compartir archivos o redes de criptomonedas.</li>
+        <li><strong>Arquitecturas de Tres Capas:</strong> Involucran una interfaz de usuario (cliente), un servidor de aplicaciones (lógica de negocio) y un servidor de base de datos. Los protocolos de la Capa 7 gestionan la comunicación entre estos tres niveles.</li>
+      </ul>
+
+      <div class="numero-pagina">2</div>
+    </section>
+
+    <section class="hoja contenido">
+      <h3>5. Seguridad en la Capa de Aplicación</h3>
+      <p>Dado que la Capa 7 es el punto de entrada para la mayoría de las interacciones del usuario, es un objetivo principal para los atacantes. La seguridad en esta capa se implementa a través de protocolos específicos y buenas prácticas:</p>
+      <ul>
+        <li><strong>Cifrado con TLS/SSL:</strong> Protocolos como HTTPS, SMTPS (correo seguro) y FTPS utilizan capas de cifrado (TLS/SSL) para proteger los datos en tránsito, garantizando la confidencialidad e integridad.</li>
+        <li><strong>Autenticación Fuerte:</strong> El uso de protocolos como SSH (con claves criptográficas) o la implementación de autenticación multifactor (MFA) en aplicaciones web evita el acceso no autorizado.</li>
+        <li><strong>Firewalls de Capa de Aplicación (WAF):</strong> Dispositivos de seguridad que inspeccionan y filtran el tráfico HTTP/HTTPS para bloquear ataques comunes como inyección SQL, Cross-Site Scripting (XSS) y Cross-Site Request Forgery (CSRF).</li>
+        <li><strong>Protección contra DNS Spoofing:</strong> Uso de DNSSEC (DNS Security Extensions) para verificar la autenticidad de las respuestas DNS.</li>
+      </ul>
+
+      <h3>6. Analogía Práctica</h3>
+      <p>Para comprender de forma intuitiva el rol de la Capa de Aplicación dentro de todo el proceso de red, podemos usar una analogía:</p>
+      <p>El usuario y la Capa 7 representan el contenido de una carta y su autoría. La Capa 7 es la persona redactando el mensaje en un idioma específico y decidiendo enviarlo. Las capas inferiores (6 a la 1) equivalen a traducir la carta a código morse, meterla en un sobre, clasificarla en la oficina postal, transportarla en camión y entregarla físicamente en la dirección de destino.</p>
+
+      <h3>7. Resumen Ejecutivo</h3>
+      <ul>
+        <li><strong>Ubicación:</strong> Capa superior (Nivel 7) del modelo OSI.</li>
+        <li><strong>Enfoque:</strong> Interfaz directa entre la red y las aplicaciones del usuario.</li>
+        <li><strong>Unidad de Datos:</strong> Datos de aplicación (Data).</li>
+        <li><strong>Propósito:</strong> Proporcionar la infraestructura y protocolos necesarios para que el software interactúe con la red global.</li>
+      </ul>
+
+      <div class="numero-pagina">3</div>
+    </section>
+
+    <section class="hoja contenido">
+      <h2>ANEXOS</h2>
+
+      <h3>Anexo A: Tabla de Protocolos y sus Puertos por Defecto</h3>
+      <p>Los protocolos de la Capa 7 operan sobre puertos lógicos específicos. La siguiente tabla resume los más importantes:</p>
+      
+      <table class="tabla-anexo">
+        <thead>
+          <tr>
+            <th>Protocolo</th>
+            <th>Función Principal</th>
+            <th>Puerto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>HTTP</td><td>Transferencia de páginas web</td><td>80</td></tr>
+          <tr><td>HTTPS</td><td>Transferencia segura de páginas web</td><td>443</td></tr>
+          <tr><td>FTP</td><td>Transferencia de archivos</td><td>20, 21</td></tr>
+          <tr><td>SSH</td><td>Acceso remoto seguro</td><td>22</td></tr>
+          <tr><td>Telnet</td><td>Acceso remoto no seguro</td><td>23</td></tr>
+          <tr><td>SMTP</td><td>Envío de correo</td><td>25</td></tr>
+          <tr><td>DNS</td><td>Resolución de nombres</td><td>53</td></tr>
+          <tr><td>DHCP</td><td>Asignación de IP</td><td>67, 68</td></tr>
+          <tr><td>POP3</td><td>Recepción de correo</td><td>110</td></tr>
+          <tr><td>IMAP</td><td>Acceso a correo</td><td>143</td></tr>
+          <tr><td>SNMP</td><td>Gestión de red</td><td>161, 162</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Anexo B: Diagrama Conceptual de la Capa 7</h3>
+      <p>La siguiente imagen ilustra cómo interactúan las aplicaciones de usuario con los protocolos de la Capa 7, los cuales a su vez se comunican con las capas inferiores del modelo OSI para transmitir los datos a través de la red física.</p>
+      
+      <div class="contenedor-diagrama">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Osi-model-7-layers-es.svg/800px-Osi-model-7-layers-es.svg.png" alt="Diagrama del Modelo OSI" class="diagrama">
+        <p class="leyenda">Figura 1. Ubicación de la Capa 7 (Aplicación) en la cima del Modelo OSI.</p>
+      </div>
+
+      <div class="numero-pagina">4</div>
+    </section>
+
+    <section class="hoja contenido">
+      <h3>Anexo C: Caso de Estudio - Navegación Web Segura (HTTPS)</h3>
+      <p>Para ejemplificar el funcionamiento de la Capa 7, analicemos lo que ocurre cuando un usuario ingresa a un sitio web seguro (https://www.ejemplo.com):</p>
+      <ul>
+        <li><strong>1. Resolución DNS:</strong> El navegador utiliza el protocolo DNS (Capa 7) para traducir "www.ejemplo.com" a una dirección IP numérica (ej. 192.168.1.1).</li>
+        <li><strong>2. Establecimiento de conexión segura:</strong> Se inicia un apretón de manos (handshake) con el protocolo TLS (que actúa entre la capa 7 y la 6) para cifrar la conexión y autenticar el servidor mediante un certificado digital.</li>
+        <li><strong>3. Solicitud HTTP:</strong> El navegador envía una petición HTTP GET (o POST) cifrada al servidor, solicitando el contenido de la página.</li>
+        <li><strong>4. Procesamiento del servidor:</strong> El servidor web (Capa 7) recibe la petición, procesa la lógica (por ejemplo, consultando una base de datos) y genera una respuesta HTTP con el código HTML.</li>
+        <li><strong>5. Respuesta y renderizado:</strong> El navegador recibe la respuesta, descifra los datos y renderiza la página web para el usuario.</li>
+      </ul>
+      <p>En este caso, los protocolos de la Capa 7 (DNS, HTTPS y TLS) trabajan en conjunto para garantizar que la información llegue de forma íntegra, segura y comprensible para el usuario final.</p>
+
+      <h3>Anexo D: Glosario de Términos</h3>
+      <ul>
+        <li><strong>OSI:</strong> Open Systems Interconnection (Interconexión de Sistemas Abiertos).</li>
+        <li><strong>HTTP:</strong> HyperText Transfer Protocol.</li>
+        <li><strong>API:</strong> Application Programming Interface (Interfaz de Programación de Aplicaciones). Es un conjunto de reglas que permite a dos aplicaciones comunicarse; muchas APIs modernas se basan en protocolos de Capa 7 como HTTP (APIs REST).</li>
+        <li><strong>SOCKET:</strong> Interfaz de programación que permite a las aplicaciones (Capa 7) comunicarse con las capas de transporte (Capa 4).</li>
+        <li><strong>URL:</strong> Uniform Resource Locator (Localizador de Recursos Uniforme).</li>
+      </ul>
+
+      <div class="numero-pagina">5</div>
+    </section>
+
+  </div>
+</body>
+</html>
